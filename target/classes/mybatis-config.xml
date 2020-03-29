@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--配置数据源，交给spring去做-->
+
+    <!-- 自动取别名-->
+    <typeAliases>
+        <package name="com.lfc.pojo"/>
+    </typeAliases>
+
+    <!--接口配置文件绑定-->
+    <mappers>
+        <mapper class="com.lfc.dao.BookMapper"/>
+    </mappers>
+</configuration>
